@@ -1,12 +1,19 @@
 {
-  "short_name": "",
-  "name": "",
-  "icons": [{
-    "src": "icon.png",
-    "type": "image/png",
-    "sizes": "192x192"
-  }],
-  "start_url": "/?utm_source=homescreen",
-  "background_color": "#fafafa",
-  "theme_color": "#fafafa"
+	"short_name" : "[W2U]",
+	"name" : "Web-2-You News feed",
+	"icons" : [
+		{
+			"src": "https://w2u-dev.github.io/img/W2U.png",
+			"sizes": "192x192"
+		}],
+	"start_url" : "https://w2u-dev.github.io/",
+	"background_color" : "#fafafa",
+	"theme_color" : "#fafafa",
+	"url" : "https://w2u-dev.github.io/",
+	"lang" : "English",
+	"screenshots" : [],
+	"description" : "Web Product Development News Feed",
+	"display" : "standalone",
+	"orientation" : "any",
+	"generated" : ""
 }
