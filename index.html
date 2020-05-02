@@ -1,9 +1,9 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="en">
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>[W2U]</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -13,30 +13,57 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/FeedEk.css">
 
   <meta name="theme-color" content="#fafafa">
+  <style>
+  body {
+   background-image: url('img/W2U.png');
+   background-repeat: no-repeat;
+   background-position: center;
+   background-attachment: fixed;
+   }
+  .container {
+  margin: auto;
+  width: 800px;
+   }
+.center {
+  text-align: center;
+  padding: 10px;
+  color:#4EBAFF;
+   }
+</style>
 </head>
 
 <body>
-  <style>
-body {
- background-image: url('img/W2U.png');
- background-repeat: no-repeat;
- background-position: center;
- background-attachment: fixed;
- }
-</style>
+
   <!--[if IE]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
 
   <!-- Add your site or application content here -->
-  <p>Hello world!</p>
+  <p class="center"> Hello world!</p>
+  <div class="container">
+  <div id="divRss"></div>
+  </div>
   <script src="js/vendor/modernizr-3.8.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+  <script type="text/javascript" src="js/FeedEk.js"></script>
+  <script type="text/javascript" src="js/FeedEk.min.js"></script>
+  <script>
+   $('#divRss').FeedEk({
+    FeedUrl : 'https://thenextweb.com/feed',
+    MaxCount : 5,
+    ShowDesc : true,
+    ShowPubDate:true,
+    TitleLinkTarget:'_blank',
+    DateFormat : 'MM/dd/yyyy',
+    DateFormatLang : 'en'
+  });
+  </script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
