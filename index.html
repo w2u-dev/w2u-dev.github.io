@@ -49,7 +49,23 @@
   <!-- Add your site or application content here -->
   <p class="center"> Hello world!</p>
   <div class="container">
-  <div id="divRss"></div>
+  <div id="divRss1"></div>
+  </div>
+<p class="center"> linux </p>
+<div class="container">
+  <div id="divRss2"></div>
+  </div>
+<p class="center"> open-source </p>
+<div class="container">
+  <div id="divRss3"></div>
+  </div>
+<p class="center"> education </p>
+<div class="container">
+  <div id="divRss4"></div>
+  </div>
+<p class="center"> video </p>
+<div class="container">
+  <div id="divRss5"></div>
   </div>
   <script src="js/vendor/modernizr-3.8.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -59,7 +75,7 @@
   <script type="text/javascript" src="js/FeedEk.js"></script>
   <script type="text/javascript" src="js/FeedEk.min.js"></script>
   <script>
-   $('#divRss').FeedEk({
+   $('#divRss1').FeedEk({
     FeedUrl : 'https://thenextweb.com/feed',
     MaxCount : 5,
     ShowDesc : true,
@@ -69,6 +85,59 @@
     DateFormatLang : 'en'
   });
   </script>
+  <script>
+   $('#divRss2').FeedEk({
+    FeedUrl : 'https://www.zdnet.com/topic/linux/rss.xml',
+    MaxCount : 5,
+    ShowDesc : true,
+    ShowPubDate:true,
+    TitleLinkTarget:'_blank',
+    DateFormat : 'f',
+    DateFormatLang : 'en'
+  });
+  </script>
+  <script>
+   $('#divRss3').FeedEk({
+    FeedUrl : 'https://www.zdnet.com/blog/open-source/rss.xml',
+    MaxCount : 5,
+    ShowDesc : true,
+    ShowPubDate:true,
+    TitleLinkTarget:'_blank',
+    DateFormat : 'f',
+    DateFormatLang : 'en'
+  });
+  </script>  
+  <script>
+   $('#divRss4').FeedEk({
+    FeedUrl : 'https://www.zdnet.com/blog/education/rss.xml',
+    MaxCount : 5,
+    ShowDesc : true,
+    ShowPubDate:true,
+    TitleLinkTarget:'_blank',
+    DateFormat : 'f',
+    DateFormatLang : 'en'
+  });
+  </script>
+  <script>
+   $('#divRss5').FeedEk({
+    FeedUrl : 'https://www.zdnet.com/videos/rss.xml',
+    MaxCount : 5,
+    ShowDesc : true,
+    ShowPubDate:true,
+    TitleLinkTarget:'_blank',
+    DateFormat : 'f',
+    DateFormatLang : 'en'
+  });
+  </script>
+<script type="module">
+
+import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
+
+const el = document.createElement('pwa-update');
+document.body.appendChild(el);
+
+</script>
+
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
