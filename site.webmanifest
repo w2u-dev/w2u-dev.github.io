@@ -13,7 +13,7 @@
 	"lang" : "English",
 	"screenshots" : [],
 	"description" : "Web Product Development News Feed",
-	"display" : "standalone",
+	"display" : "fullscreen",
 	"orientation" : "any",
 	"generated" : ""
 }
